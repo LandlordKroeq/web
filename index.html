@@ -82,49 +82,6 @@
             background: var(--accent);
         }
 
-        /* HEADER */
-        .header {
-            margin-top: 30px;
-            padding: 24px 16px 28px;
-            background: var(--bg-glass);
-            border-radius: 14px;
-            border: 1px solid #333;
-            backdrop-filter: blur(10px);
-        }
-
-        .pfp {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            border: 3px solid var(--accent);
-            box-shadow: 0 0 16px rgba(255,255,255,0.6);
-        }
-
-        .info h1 {
-            margin: 12px 0 4px;
-            font-size: 2.3rem;
-        }
-
-        /* CONTACT ICONS */
-        .contact-icons {
-            display: flex;
-            justify-content: center;
-            gap: 26px;
-            margin-top: 14px;
-        }
-
-        .contact-icon {
-            width: 40px;
-            height: 40px;
-            filter: invert(1) drop-shadow(0 0 6px #ffffff);
-            transition: 0.25s;
-        }
-
-        .contact-icon:hover {
-            transform: scale(1.15);
-            filter: invert(1) drop-shadow(0 0 12px #ffffff);
-        }
-
         /* SECTIONS */
         section {
             margin-top: 40px;
@@ -207,25 +164,6 @@
         <a href="#top" class="nav-link">Top</a>
     </nav>
 
-    <!-- HEADER -->
-    <div id="top" class="header">
-        <img src="https://files.catbox.moe/bi5vg1.png" class="pfp" alt="Profile picture">
-
-        <div class="info">
-            <h1>kroeqq</h1>
-        </div>
-
-        <div class="contact-icons">
-            <a href="https://discord.com/users/1187889696458674238" target="_blank">
-                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" class="contact-icon" alt="Discord">
-            </a>
-
-            <a href="https://roblox.com/users/9269941758/profile" target="_blank">
-                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/roblox.svg" class="contact-icon" alt="Roblox">
-            </a>
-        </div>
-    </div>
-
     <!-- GALLERY -->
     <section id="gallery">
         <h2>Gallery</h2>
@@ -273,11 +211,10 @@
     links.forEach(link => {
         link.addEventListener('click', () => {
             links.forEach(l => l.classList.remove('active'));
-            link.classList.add('active');
+            link.classList.add('active'));
         });
     });
 </script>
 
 </body>
 </html>
-
